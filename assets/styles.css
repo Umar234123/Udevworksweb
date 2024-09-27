@@ -114,3 +114,14 @@ img {
     width: 350px;;
     height:auto;
 }
+
+.video-container {
+    width: 300px;          
+    height: auto;         
+    overflow: hidden;    
+}
+
+.video-container video {
+    width: 100%;         
+    height: auto;        
+}
