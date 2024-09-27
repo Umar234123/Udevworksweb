@@ -137,34 +137,11 @@
                                 <h3>Summary:</h3>
                                 <p>The ESP8266/ESP32 connects to both the OLED display and DHT11 sensor. The OLED display shows temperature, humidity, time, and date data fetched from the DHT11 sensor and an NTP server via WiFi. Proper wiring ensures data communication between the microcontroller, sensor, and display, while the code manages data collection and display functionality.</p>
                                 <p>Remember to validate the pin configurations and wiring connections for accurate operation of the project. Correctly set up, this project provides real-time environmental data displayed on the OLED screen.</p>
-                                <button class="copy-btn">Copy to Clipboard</button>
-                                <script>document.querySelectorAll('.copy-btn').forEach(button => {
-                                    button.addEventListener('click', () => {
-                                      const codeBlock = button.parentElement.querySelector('code');
-                                      if (!codeBlock) {
-                                        console.error('Code block not found');
-                                        return;
-                                      }
-                                      const text = codeBlock.innerText;
-                                  
-                                      navigator.clipboard.writeText(text)
-                                        .then(() => {
-                                          button.innerText = 'Copied!';
-                                          setTimeout(() => {
-                                            button.innerText = 'Copy to Clipboard';
-                                          }, 2000);
-                                        })
-                                        .catch(err => {
-                                          console.error('Failed to copy:', err);
-                                        });
-                                    });
-                                  });
-                                  </script>
                                 
 
                                 
                             </div></p>
-                            <span class="retract-arrow">&uarr;</span>
+                           
                         </div>
                     </div>
                 </div>
